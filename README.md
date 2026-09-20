@@ -118,7 +118,7 @@ Visualização complementar do painel demonstrando os controles e informações 
 
 <div align="center">
 
-<img src="docs/screenshots/tela_missao.png.png" width="280"/>
+<img src="docs/screenshots/tela_missao.png.png" width="700"/>
 
 </div>
 
