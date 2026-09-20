@@ -50,27 +50,27 @@ O projeto foi desenvolvido para apresentar uma solução capaz de centralizar a 
 
 Por meio do aplicativo é possível demonstrar:
 
-* 🔐 Autenticação de usuários
-* 🤖 Monitoramento do estado do robô
-* 🔋 Visualização do nível de bateria
-* 📍 Indicação de localização
-* ☀️ Estado do sistema UV
-* 📡 Estado da conexão
-* 🔌 Ativação do robô
-* 🛑 Parada segura
-* 📋 Visualização de missões
-* ⚙️ Configurações
-* ☰ Navegação por menu lateral
+- 🔐 Autenticação de usuários
+- 🤖 Monitoramento do estado do robô
+- 🔋 Visualização do nível de bateria
+- 📍 Indicação de localização
+- ☀️ Estado do sistema UV
+- 📡 Estado da conexão
+- 🔌 Ativação do robô
+- 🛑 Parada segura
+- 📋 Visualização de missões
+- ⚙️ Configurações
+- ☰ Navegação por menu lateral
 
 ---
 
-# 📱 Interface do aplicativo
+## 📱 Interface do aplicativo
 
-## 🔐 Login
+### 🔐 Login
 
 <div align="center">
 
-<img src="docs/screenshots/01-login.png" width="280"/>
+<img src="docs/screenshots/tela_login.png.png" width="280"/>
 
 </div>
 
@@ -80,11 +80,11 @@ A interface também possui a opção **Lembrar login**, permitindo manter a sess
 
 ---
 
-## 🤖 Painel principal
+### 🤖 Painel principal
 
 <div align="center">
 
-<img src="docs/screenshots/02-dashboard.png" width="280"/>
+<img src="docs/screenshots/painel_controle.png.png" width="280"/>
 
 </div>
 
@@ -92,86 +92,86 @@ O painel principal concentra as principais informações relacionadas ao funcion
 
 Entre as informações apresentadas estão:
 
-* Status do robô
-* Estado da bateria
-* Localização
-* Estado do sistema UV
-* Estado da conexão
+- Status do robô
+- Estado da bateria
+- Localização
+- Estado do sistema UV
+- Estado da conexão
 
 A tela também possui os principais controles utilizados durante a demonstração.
 
 ---
 
-## ☰ Menu lateral
+### 🎛️ Controles do sistema
 
 <div align="center">
 
-<img src="docs/screenshots/03-menu-lateral.png" width="280"/>
+<img src="docs/screenshots/painel_controle2.png.png" width="280"/>
 
 </div>
 
-O menu lateral permite navegar entre as principais áreas do aplicativo, facilitando o acesso ao painel, missões e configurações.
+Visualização complementar do painel demonstrando os controles e informações disponíveis durante a operação do sistema.
 
 ---
 
-## 📋 Missões
+### 📋 Missões
 
 <div align="center">
 
-<img src="docs/screenshots/04-missoes.png" width="280"/>
+<img src="docs/screenshots/tela_missao.png.png" width="280"/>
 
 </div>
 
-Tela responsável pela apresentação das missões relacionadas ao funcionamento do sistema durante a demonstração.
+Tela responsável pela visualização das missões relacionadas ao funcionamento do sistema durante a demonstração.
 
 ---
 
-## ⚙️ Configurações
+### ⚙️ Configurações
 
 <div align="center">
 
-<img src="docs/screenshots/05-configuracoes.png" width="280"/>
+<img src="docs/screenshots/tela_configuracao.png.png" width="280"/>
 
 </div>
 
-Área destinada às configurações da aplicação e gerenciamento da sessão do usuário.
+Área destinada às configurações da aplicação e ao gerenciamento da sessão do usuário.
 
 ---
 
-# ⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
-| Funcionalidade                       | Status |
-| ------------------------------------ | :----: |
-| 🔐 Login com Firebase Authentication |    ✅   |
-| 💾 Lembrar login                     |    ✅   |
-| 🤖 Painel de monitoramento           |    ✅   |
-| 🔌 Ativação do robô pela interface   |    ✅   |
-| 🛑 Parada segura                     |    ✅   |
-| 🔋 Visualização da bateria           |    ✅   |
-| 📍 Visualização da localização       |    ✅   |
-| ☀️ Estado do sistema UV              |    ✅   |
-| 📡 Estado da conexão                 |    ✅   |
-| 📋 Tela de missões                   |    ✅   |
-| ☰ Menu lateral                       |    ✅   |
-| ⚙️ Configurações                     |    ✅   |
-| 🚪 Logout                            |    ✅   |
+| Funcionalidade | Status |
+|---|:---:|
+| 🔐 Login com Firebase Authentication | ✅ |
+| 💾 Lembrar login | ✅ |
+| 🤖 Painel de monitoramento | ✅ |
+| 🔌 Ativação do robô pela interface | ✅ |
+| 🛑 Parada segura | ✅ |
+| 🔋 Visualização da bateria | ✅ |
+| 📍 Visualização da localização | ✅ |
+| ☀️ Estado do sistema UV | ✅ |
+| 📡 Estado da conexão | ✅ |
+| 📋 Tela de missões | ✅ |
+| ☰ Menu lateral | ✅ |
+| ⚙️ Configurações | ✅ |
+| 🚪 Logout | ✅ |
 
 ---
 
-# 🧪 Conta de demonstração
+## 🧪 Conta de demonstração
 
 Para facilitar a avaliação e os testes do aplicativo, foi criada uma conta exclusivamente para demonstração.
 
-**E-mail:** `teste@gmail.com`
+**E-mail:** `teste@gmail.com`  
 **Senha:** `123456`
 
-> A conta foi criada exclusivamente para permitir o acesso às funcionalidades demonstrativas do projeto.
+> Esta conta foi criada exclusivamente para permitir o acesso às funcionalidades demonstrativas do projeto.
 
 ---
 
-# 🚀 Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
-## 💻 Desenvolvimento
+### 💻 Desenvolvimento
 
 <p>
   <img src="https://skillicons.dev/icons?i=java,androidstudio" />
@@ -182,7 +182,7 @@ Para facilitar a avaliação e os testes do aplicativo, foi criada uma conta exc
 
 ---
 
-## 🔥 Firebase
+### 🔥 Autenticação
 
 <p>
   <img src="https://skillicons.dev/icons?i=firebase" />
@@ -192,7 +192,7 @@ O **Firebase Authentication** é utilizado para realizar a autenticação dos us
 
 ---
 
-## 🛠️ Versionamento
+### 🛠️ Versionamento
 
 <p>
   <img src="https://skillicons.dev/icons?i=git,github" />
@@ -202,11 +202,10 @@ O **Firebase Authentication** é utilizado para realizar a autenticação dos us
 
 ---
 
-# 🧩 Estrutura da aplicação
+## 🧩 Estrutura da aplicação
 
 ```text
 Tela_Login
-     │
      │
      ▼
 Firebase Authentication
@@ -234,23 +233,23 @@ MainActivity
 
 ### `Tela_Login.java`
 
-Responsável pela autenticação do usuário e gerenciamento inicial da sessão.
+Responsável pela autenticação do usuário através do Firebase e pelo gerenciamento inicial da sessão.
 
 ### `MainActivity.java`
 
-Responsável pelo painel principal, informações de estado e controles apresentados ao usuário.
+Responsável pelo painel principal, pelas informações de estado e pelos controles apresentados ao usuário.
 
 ### `Tela_Missoes.java`
 
-Responsável pela interface relacionada às missões.
+Responsável pela interface relacionada às missões do sistema.
 
 ### `Tela_Configuracoes.java`
 
-Responsável pelas configurações da aplicação e logout.
+Responsável pelas configurações da aplicação e pelo logout do usuário.
 
 ---
 
-# 📂 Estrutura do repositório
+## 📂 Estrutura do repositório
 
 ```text
 UV-Care-Robot/
@@ -278,11 +277,11 @@ UV-Care-Robot/
 │
 ├── docs/
 │   ├── screenshots/
-│   │   ├── 01-login.png
-│   │   ├── 02-dashboard.png
-│   │   ├── 03-menu-lateral.png
-│   │   ├── 04-missoes.png
-│   │   └── 05-configuracoes.png
+│   │   ├── painel_controle.png.png
+│   │   ├── painel_controle2.png.png
+│   │   ├── tela_configuracao.png.png
+│   │   ├── tela_login.png.png
+│   │   └── tela_missao.png.png
 │   │
 │   └── demo/
 │
@@ -299,21 +298,21 @@ UV-Care-Robot/
 
 ---
 
-# ▶️ Executando o projeto
+## ▶️ Executando o projeto
 
-## Pré-requisitos
+### Pré-requisitos
 
-Para executar o projeto pelo código-fonte é necessário possuir:
+Para executar o projeto através do código-fonte é necessário possuir:
 
-* Android Studio
-* Android SDK
-* JDK compatível com o projeto
-* Emulador Android ou dispositivo físico
-* Configuração adequada do Firebase
+- Android Studio
+- Android SDK
+- JDK compatível com o projeto
+- Emulador Android ou dispositivo físico
+- Configuração adequada do Firebase
 
 ---
 
-## 📥 Clonar o repositório
+### 📥 Clonar o repositório
 
 ```bash
 git clone https://github.com/IgorGabriel505/UV-Care-Robot.git
@@ -329,24 +328,24 @@ Depois:
 
 ---
 
-# 📲 Testar o aplicativo
+## 📲 Testar o aplicativo
 
-Uma versão compilada do aplicativo será disponibilizada através da seção **Releases** deste repositório.
+Uma versão compilada do aplicativo pode ser disponibilizada através da seção **Releases** deste repositório.
 
 <p>
   <a href="https://github.com/IgorGabriel505/UV-Care-Robot/releases">
-    <img src="https://img.shields.io/badge/📦%20GitHub%20Releases-181717?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub%20Releases-Baixar%20APK-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
 Após instalar o aplicativo, utilize a conta de demonstração:
 
-**E-mail:** `teste@gmail.com`
+**E-mail:** `teste@gmail.com`  
 **Senha:** `123456`
 
 ---
 
-# 📌 Status do projeto
+## 📌 Status do projeto
 
 <div align="center">
 
@@ -360,9 +359,9 @@ O objetivo deste repositório é preservar o código-fonte, documentar a soluç�
 
 ---
 
-# 👨‍💻 Autor
+## 👨‍💻 Autor
 
-## Igor Gabriel
+### Igor Gabriel
 
 Estudante de **Engenharia de Software no INATEL**, Técnico em **Desenvolvimento de Sistemas pelo SENAI** e bolsista de **Iniciação Científica**, com foco profissional em **desenvolvimento Back-end Java**.
 
@@ -378,7 +377,7 @@ Estudante de **Engenharia de Software no INATEL**, Técnico em **Desenvolvimento
 
 ---
 
-# 📄 Licença
+## 📄 Licença
 
 Este projeto está disponibilizado sob a **MIT License**.
 
