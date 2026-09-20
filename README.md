@@ -1,264 +1,239 @@
+<div align="center">
+
 # 🤖 UV-Care Robot
 
-<p align="center">
-  <img src="app/src/main/res/drawable/logo_uv_care.png" alt="UV-Care Robot" width="180" />
+### Aplicativo Android para monitoramento e controle de um sistema de desinfecção UV
+
+<p>
+  <img src="https://img.shields.io/badge/Status-Protótipo%20Concluído-2ea44f?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Projeto-FETIN-7B2CBF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Plataforma-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
 </p>
 
-<p align="center">
-  Aplicativo Android para interface de controle e gerenciamento de um protótipo de robô de desinfecção UV-C.
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-11-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/Firebase-Authentication-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/XML-UI-005FAD?style=for-the-badge&logo=xml&logoColor=white" alt="XML" />
-</p>
-
-<p align="center">
+<p>
   <a href="https://github.com/IgorGabriel505/UV-Care-Robot/releases/latest">
-    <img src="https://img.shields.io/badge/Baixar-APK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Baixar APK" />
+    <img src="https://img.shields.io/badge/⬇️%20Baixar%20APK-181717?style=for-the-badge&logo=android&logoColor=white" />
   </a>
-  <a href="https://github.com/IgorGabriel505/UV-Care-Robot">
-    <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Código no GitHub" />
+
+  <a href="https://github.com/IgorGabriel505">
+    <img src="https://img.shields.io/badge/GitHub-IgorGabriel505-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+
+  <a href="https://www.linkedin.com/in/igor-gabriel-porto-vidal/">
+    <img src="https://img.shields.io/badge/LinkedIn-Igor%20Gabriel-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
 </p>
 
-> **Status:** protótipo em desenvolvimento. A interface, autenticação e navegação estão implementadas. Os comandos do painel atualmente alteram o estado local da aplicação; a comunicação física com o robô ainda não faz parte desta versão do código.
+</div>
 
 ---
 
 ## 📖 Sobre o projeto
 
-O **UV-Care Robot** é um aplicativo Android desenvolvido para servir como interface de controle de um robô voltado à desinfecção de ambientes com tecnologia UV-C.
+O **UV-Care Robot** é um aplicativo Android desenvolvido em **Java** como protótipo demonstrativo para apresentação na **FETIN**.
 
-A aplicação concentra funções de autenticação, visualização do estado do robô, controles operacionais, gerenciamento de missões e configurações de usuário em uma interface pensada para um cenário hospitalar.
+A aplicação representa uma interface de monitoramento e controle para um sistema de desinfecção utilizando luz UV, permitindo ao usuário visualizar informações relacionadas ao estado do robô, executar comandos pela interface e acompanhar missões.
 
-O projeto foi desenvolvido com foco em **Java para Android**, interfaces em **XML** e autenticação por meio do **Firebase Authentication**.
+O objetivo do projeto foi demonstrar de maneira visual e interativa como um aplicativo Android pode funcionar como interface de operação de um sistema robótico.
 
----
-
-## ✨ Funcionalidades
-
-- 🔐 Login de usuários com Firebase Authentication
-- 💾 Opção **Lembrar login** utilizando `SharedPreferences`
-- 🏠 Painel principal de controle do robô
-- ⚡ Controle de ligar/desligar o estado do robô na interface
-- 🛑 Parada segura
-- 🔙 Comando de retorno à base
-- 🔋 Visualização de bateria, localização, conexão e estado UV-C
-- 🎯 Tela de gerenciamento de missões
-- ☰ Menu lateral de navegação
-- ⚙️ Tela de configurações
-- 🚪 Logout com limpeza da sessão
-
-### Em desenvolvimento
-
-- Criação de novas missões
-- Comunicação real entre aplicativo e robô
-- Atualização de telemetria em tempo real
-- Integração dos controles da interface com o hardware
-- Expansão das rotinas de segurança UV-C
+> O aplicativo possui caráter demonstrativo. As funções apresentadas representam os fluxos e controles planejados para o sistema UV-Care Robot.
 
 ---
 
-## 📱 Demonstração
+## 🎯 Objetivo
 
-### Login
+O projeto foi desenvolvido para apresentar uma solução capaz de centralizar a interação entre o usuário e o sistema UV-Care Robot.
 
-<p align="center">
-  <img src="docs/screenshots/01-login.png" width="260" alt="Tela de login do UV-Care Robot" />
-</p>
+Através do aplicativo é possível demonstrar:
 
-### Painel de controle
-
-<p align="center">
-  <img src="docs/screenshots/02-dashboard.png" width="260" alt="Painel de controle" />
-  <img src="docs/screenshots/03-menu-lateral.png" width="260" alt="Menu lateral" />
-</p>
-
-### Missões e configurações
-
-<p align="center">
-  <img src="docs/screenshots/04-missoes.png" width="260" alt="Tela de missões" />
-  <img src="docs/screenshots/05-configuracoes.png" width="260" alt="Tela de configurações" />
-</p>
-
-> Adicione as capturas de tela em `docs/screenshots/` usando exatamente os nomes acima.
-
-### Vídeo/GIF
-
-Um GIF curto mostrando o fluxo **Login → Painel → Missões → Configurações** pode ser colocado em:
-
-`docs/demo/uv-care-demo.gif`
-
-Depois, substitua este texto por:
-
-```html
-<p align="center">
-  <img src="docs/demo/uv-care-demo.gif" width="300" alt="Demonstração do UV-Care Robot" />
-</p>
-```
+* autenticação de usuários;
+* monitoramento do estado do robô;
+* visualização da bateria;
+* indicação de localização;
+* estado do sistema UV;
+* estado de conexão;
+* ativação do robô;
+* parada segura;
+* gerenciamento e visualização de missões;
+* navegação entre diferentes áreas do sistema.
 
 ---
 
-## 🧭 Fluxo da aplicação
+## 🎥 Demonstração
 
-```mermaid
-flowchart TD
-    A[Tela de Login] -->|Autenticação Firebase| B[Painel de Controle]
-    B --> C[Missões]
-    B --> D[Configurações]
-    C --> B
-    C --> D
-    D --> B
-    D --> C
-    D -->|Sair da conta| A
-```
+<div align="center">
+
+![Demonstração UV-Care Robot](docs/demo/uv-care-demo.gif)
+
+</div>
+
+> Caso o GIF ainda não tenha sido adicionado, coloque o arquivo em `docs/demo/uv-care-demo.gif`.
 
 ---
 
-## 🧩 Estrutura principal
+## 📱 Interface do aplicativo
+
+### 🔐 Login
+
+<div align="center">
+
+<img src="docs/screenshots/01-login.png" width="280"/>
+
+</div>
+
+Tela responsável pela autenticação do usuário através do **Firebase Authentication**, incluindo a opção de manter a sessão salva.
+
+---
+
+### 🤖 Painel principal
+
+<div align="center">
+
+<img src="docs/screenshots/02-dashboard.png" width="280"/>
+
+</div>
+
+O painel concentra as principais informações do sistema e os controles disponíveis durante a demonstração.
+
+Entre as informações apresentadas estão:
+
+* status do robô;
+* nível de bateria;
+* localização;
+* estado do sistema UV;
+* estado da conexão.
+
+---
+
+### ☰ Menu lateral
+
+<div align="center">
+
+<img src="docs/screenshots/03-menu-lateral.png" width="280"/>
+
+</div>
+
+O menu lateral permite navegar rapidamente entre as principais áreas do aplicativo.
+
+---
+
+### 📋 Missões
+
+<div align="center">
+
+<img src="docs/screenshots/04-missoes.png" width="280"/>
+
+</div>
+
+Tela destinada à visualização e gerenciamento das missões apresentadas durante a demonstração do sistema.
+
+---
+
+### ⚙️ Configurações
+
+<div align="center">
+
+<img src="docs/screenshots/05-configuracoes.png" width="280"/>
+
+</div>
+
+Área destinada às configurações da aplicação e gerenciamento da sessão do usuário.
+
+---
+
+## ⚙️ Funcionalidades
+
+| Funcionalidade                       | Status |
+| ------------------------------------ | :----: |
+| 🔐 Login com Firebase Authentication |    ✅   |
+| 💾 Lembrar login                     |    ✅   |
+| 🤖 Painel de monitoramento           |    ✅   |
+| 🔌 Ativação do robô pela interface   |    ✅   |
+| 🛑 Parada segura                     |    ✅   |
+| 🔋 Visualização da bateria           |    ✅   |
+| 📍 Visualização da localização       |    ✅   |
+| ☀️ Status do sistema UV              |    ✅   |
+| 📡 Status de conexão                 |    ✅   |
+| 📋 Tela de missões                   |    ✅   |
+| ☰ Menu lateral                       |    ✅   |
+| ⚙️ Configurações                     |    ✅   |
+| 🚪 Logout                            |    ✅   |
+
+---
+
+## 🧪 Conta para demonstração
+
+Para facilitar a avaliação do aplicativo, foi criada uma conta exclusivamente para demonstração:
 
 ```text
-UV-Care-Robot/
-├── app/
-│   └── src/main/
-│       ├── java/com/example/uv_carerobot/
-│       │   ├── Tela_Login.java
-│       │   ├── MainActivity.java
-│       │   ├── Tela_Missoes.java
-│       │   └── Tela_Configuracoes.java
-│       ├── res/
-│       │   ├── drawable/
-│       │   ├── layout/
-│       │   ├── mipmap-*/
-│       │   └── values/
-│       └── AndroidManifest.xml
-├── docs/
-│   ├── screenshots/
-│   └── demo/
-├── gradle/
-├── build.gradle.kts
-├── settings.gradle.kts
-└── README.md
+E-mail: teste@gmail.com
+Senha: 123456
 ```
 
----
-
-## 🛠️ Tecnologias utilizadas
-
-| Tecnologia | Uso no projeto |
-|---|---|
-| **Java 11** | Lógica e comportamento das telas Android |
-| **XML** | Construção das interfaces |
-| **Android SDK** | Plataforma do aplicativo |
-| **Firebase Authentication** | Autenticação de usuários |
-| **SharedPreferences** | Persistência da opção de manter login |
-| **Gradle Kotlin DSL** | Configuração e dependências do projeto |
-| **Git / GitHub** | Versionamento e distribuição do código |
-
-### Configuração Android
-
-- `minSdk`: **24** — Android 7.0+
-- `targetSdk`: **37**
-- `compileSdk`: **37**
-- Versão do aplicativo: **1.0**
+> A conta é utilizada somente para permitir o acesso às telas e funcionalidades demonstrativas do projeto.
 
 ---
 
-## 🔐 Autenticação
+## 🚀 Tecnologias utilizadas
 
-A autenticação é realizada com **Firebase Authentication** utilizando e-mail e senha.
+### Linguagem e plataforma
 
-Quando a opção **Lembrar login** está habilitada, o aplicativo utiliza `SharedPreferences` para decidir se deve aproveitar uma sessão válida do Firebase na próxima abertura.
-
-Para uma demonstração pública do projeto, recomenda-se utilizar um ambiente Firebase separado para testes ou implementar um **modo demonstração**, evitando compartilhar contas ou credenciais pessoais. O arquivo `google-services.json` não faz parte desta versão pública preparada do repositório; cada desenvolvedor pode adicionar sua própria configuração em `app/`.
-
----
-
-## ▶️ Como executar pelo código-fonte
-
-### Pré-requisitos
-
-- Android Studio compatível com o projeto
-- JDK compatível com a versão do Android Gradle Plugin utilizada
-- Android SDK instalado
-- Dispositivo Android ou emulador
-- Projeto Firebase configurado para autenticação por e-mail/senha
-
-### Passos
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/IgorGabriel505/UV-Care-Robot.git
-```
-
-2. Abra a pasta do projeto no **Android Studio**.
-3. Aguarde a sincronização do Gradle.
-4. Crie/configure seu próprio projeto Firebase e adicione o arquivo `google-services.json` dentro de `app/`.
-5. Ative o provedor **E-mail/Senha** no Firebase Authentication.
-6. Execute o aplicativo em um emulador ou dispositivo Android.
-
----
-
-## 📦 Baixar e testar o APK
-
-A forma recomendada de disponibilizar uma versão instalável é através de **GitHub Releases**, e não armazenando o APK diretamente na branch principal.
-
-Quando uma versão estiver publicada, utilize:
-
-👉 **[Baixar a versão mais recente](https://github.com/IgorGabriel505/UV-Care-Robot/releases/latest)**
-
-Para testar a versão atual, o usuário também precisa ter acesso a uma conta de demonstração válida no Firebase, enquanto um modo de demonstração sem login não estiver implementado.
-
----
-
-## 🧪 Estado atual do projeto
-
-| Recurso | Estado |
-|---|---|
-| Login Firebase | ✅ Implementado |
-| Lembrar login | ✅ Implementado |
-| Navegação entre telas | ✅ Implementado |
-| Painel de controle | ✅ Interface implementada |
-| Parada segura | ✅ Estado local implementado |
-| Retornar à base | ✅ Estado local implementado |
-| Tela de missões | ✅ Interface implementada |
-| Criar nova missão | 🚧 Planejado |
-| Comunicação física com o robô | 🚧 Planejado |
-| Telemetria em tempo real | 🚧 Planejado |
-
----
-
-## 🗺️ Próximos passos
-
-- [ ] Implementar criação e edição de missões
-- [ ] Integrar comunicação real com o robô
-- [ ] Receber telemetria e bateria em tempo real
-- [ ] Integrar sensores e rotinas de segurança
-- [ ] Criar modo de demonstração para o portfólio
-- [ ] Adicionar testes para as principais regras da aplicação
-- [ ] Melhorar tratamento de estados de conexão e falhas
-
----
-
-## ⚠️ Segurança UV-C
-
-Este projeto é um **protótipo acadêmico/de desenvolvimento**. Sistemas UV-C podem representar riscos à saúde quando utilizados de forma inadequada. Uma implementação física real deve possuir mecanismos independentes de segurança, sensores, intertravamentos e procedimentos adequados ao ambiente de operação.
-
----
-
-## 👨‍💻 Autor
-
-**Igor Gabriel**
-
-- GitHub: [IgorGabriel505](https://github.com/IgorGabriel505)
-- LinkedIn: [Igor Gabriel](https://www.linkedin.com/in/igor-gabriel-porto-vidal/)
-
----
-
-<p align="center">
-  Desenvolvido como projeto de estudo e evolução em desenvolvimento Android, Java e integração de software com robótica.
+<p>
+  <img src="https://skillicons.dev/icons?i=java,androidstudio" />
+  <img width="48" height="48" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg" />
 </p>
+
+**Java** · **Android Studio** · **XML**
+
+### Autenticação
+
+<p>
+  <img src="https://skillicons.dev/icons?i=firebase" />
+</p>
+
+**Firebase Authentication**
+
+### Versionamento e desenvolvimento
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
+</p>
+
+**Git** · **GitHub** · **Visual Studio Code**
+
+---
+
+## 🧩 Estrutura da aplicação
+
+```text
+Tela_Login
+     │
+     │ Firebase Authentication
+     ▼
+MainActivity
+     │
+     ├──────────────► Painel principal
+     │
+     ├──────────────► Controles
+     │
+     ├──────────────► Monitoramento
+     │
+     ├──────────────► Tela_Missoes
+     │
+     └──────────────► Tela_Configuracoes
+                            │
+                            ▼
+                          Logout
+```
+
+### Principais classes
+
+```text
+Tela_Login.java
+└── Autenticação e gerenciamento inicial da sessão
+
+MainActivity.java
+└── Painel principal, status e controles
+
+Tela
+```
