@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayoutMissoes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- ===================================================== -->
+    <!-- CONTEÚDO PRINCIPAL                                    -->
+    <!-- ===================================================== -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#F4F7FB">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- ================================================= -->
+            <!-- BARRA SUPERIOR                                    -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:background="#FFFFFF">
+
+
+                <ImageButton
+                    android:id="@+id/btnMenuMissoes"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/ic_menu"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="10dp"
+                    android:contentDescription="Abrir menu" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="UV-Care Robot"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#142033" />
+
+
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- CONTEÚDO                                         -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Missões"
+                    android:textColor="#142033"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Gerencie as missões de desinfecção do robô."
+                    android:textColor="#6B778C"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/btnNovaMissao"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="#2457F5"
+                    android:text="+ Nova missão"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Missões agendadas"
+                    android:textColor="#142033"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Desinfecção · Ala A"
+                        android:textColor="#142033"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Local: Leito 01"
+                        android:textColor="#6B778C"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Horário: 20:00"
+                        android:textColor="#6B778C"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Duração: 15 minutos"
+                        android:textColor="#6B778C"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="● AGENDADA"
+                        android:textColor="#2457F5"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Histórico"
+                    android:textColor="#142033"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="#FFFFFF"
+                    android:padding="18dp"
+                    android:text="Nenhuma missão concluída registrada."
+                    android:textColor="#6B778C"
+                    android:textSize="14sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- ===================================================== -->
+    <!-- MENU LATERAL                                          -->
+    <!-- ===================================================== -->
+
+    <LinearLayout
+        android:id="@+id/menuLateralMissoes"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="16dp"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <!-- CABEÇALHO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="24dp"
+            android:background="#142033">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UV-Care Robot"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Sistema de desinfecção autônoma"
+                android:textSize="13sp"
+                android:textColor="#B8C4D6" />
+
+
+        </LinearLayout>
+
+
+        <!-- PAINEL -->
+
+        <TextView
+            android:id="@+id/menuPainelMissoes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="16dp"
+            android:text="🏠   Painel de Controle"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#142033"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- MISSÕES -->
+
+        <TextView
+            android:id="@+id/menuMissoesAtual"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="16dp"
+            android:text="🎯   Missões"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#142033"
+            android:background="#EAF2FF"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- CONFIGURAÇÕES -->
+
+        <TextView
+            android:id="@+id/menuConfiguracoesMissoes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="16dp"
+            android:text="⚙   Configurações"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#142033"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

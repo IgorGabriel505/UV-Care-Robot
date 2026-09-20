@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayoutConfiguracoes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- ===================================================== -->
+    <!-- CONTEÚDO PRINCIPAL                                    -->
+    <!-- ===================================================== -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#F4F7FB">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- ================================================= -->
+            <!-- BARRA SUPERIOR                                    -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:background="#FFFFFF">
+
+                <ImageButton
+                    android:id="@+id/btnMenuConfiguracoes"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/ic_menu"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="10dp"
+                    android:contentDescription="Abrir menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="UV-Care Robot"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#142033" />
+
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- CONTEÚDO                                         -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+
+                <!-- TÍTULO -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Configurações"
+                    android:textColor="#142033"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Ajustes e informações do aplicativo."
+                    android:textColor="#6B778C"
+                    android:textSize="15sp" />
+
+
+                <!-- ================================================= -->
+                <!-- CONTA                                            -->
+                <!-- ================================================= -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Conta"
+                    android:textColor="#142033"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/btnSairConta"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#D32F2F"
+                    android:text="Sair da conta"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <!-- ================================================= -->
+                <!-- SOBRE                                            -->
+                <!-- ================================================= -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Sobre"
+                    android:textColor="#142033"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <!-- VERSÃO -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Versão do aplicativo"
+                        android:textColor="#142033"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="1.0"
+                        android:textColor="#6B778C"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- ===================================================== -->
+    <!-- MENU DOS 3 RISCOS                                    -->
+    <!-- ===================================================== -->
+
+    <LinearLayout
+        android:id="@+id/menuLateralConfiguracoes"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="16dp"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <!-- CABEÇALHO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="24dp"
+            android:background="#142033">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UV-Care Robot"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Sistema de desinfecção autônoma"
+                android:textSize="13sp"
+                android:textColor="#B8C4D6" />
+
+        </LinearLayout>
+
+
+        <!-- PAINEL -->
+
+        <TextView
+            android:id="@+id/menuPainelConfiguracoes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="16dp"
+            android:text="🏠   Painel de Controle"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#142033"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- MISSÕES -->
+
+        <TextView
+            android:id="@+id/menuMissoesConfiguracoes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="16dp"
+            android:text="🎯   Missões"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#142033"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- CONFIGURAÇÕES -->
+
+        <TextView
+            android:id="@+id/menuConfiguracoesAtual"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="16dp"
+            android:text="⚙   Configurações"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#142033"
+            android:background="#EAF2FF"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
