@@ -11,12 +11,8 @@
 </p>
 
 <p>
-  <a href="https://github.com/IgorGabriel505/UV-Care-Robot/releases/latest">
-    <img src="https://img.shields.io/badge/⬇️%20Baixar%20APK-181717?style=for-the-badge&logo=android&logoColor=white" />
-  </a>
-
-  <a href="https://github.com/IgorGabriel505">
-    <img src="https://img.shields.io/badge/GitHub-IgorGabriel505-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://github.com/IgorGabriel505/UV-Care-Robot">
+    <img src="https://img.shields.io/badge/GitHub-Repositório-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 
   <a href="https://www.linkedin.com/in/igor-gabriel-porto-vidal/">
@@ -34,9 +30,17 @@ O **UV-Care Robot** é um aplicativo Android desenvolvido em **Java** como prot�
 
 A aplicação representa uma interface de monitoramento e controle para um sistema de desinfecção utilizando luz UV, permitindo ao usuário visualizar informações relacionadas ao estado do robô, executar comandos pela interface e acompanhar missões.
 
-O objetivo do projeto foi demonstrar de maneira visual e interativa como um aplicativo Android pode funcionar como interface de operação de um sistema robótico.
+O objetivo do projeto foi demonstrar, de maneira visual e interativa, como um aplicativo Android pode ser utilizado como interface de operação de um sistema robótico.
 
-> O aplicativo possui caráter demonstrativo. As funções apresentadas representam os fluxos e controles planejados para o sistema UV-Care Robot.
+> O aplicativo possui caráter demonstrativo. As funcionalidades apresentadas representam os fluxos e controles desenvolvidos para a demonstração do sistema UV-Care Robot.
+
+---
+
+## 🏫 Contexto do projeto
+
+O **UV-Care Robot** foi desenvolvido com foco em demonstração durante a **FETIN**, permitindo apresentar de forma prática a interação entre o usuário e a proposta do sistema robótico.
+
+O aplicativo funciona como a camada visual do projeto, centralizando informações, controles e navegação em uma interface Android criada especificamente para a apresentação.
 
 ---
 
@@ -44,36 +48,25 @@ O objetivo do projeto foi demonstrar de maneira visual e interativa como um apli
 
 O projeto foi desenvolvido para apresentar uma solução capaz de centralizar a interação entre o usuário e o sistema UV-Care Robot.
 
-Através do aplicativo é possível demonstrar:
+Por meio do aplicativo é possível demonstrar:
 
-* autenticação de usuários;
-* monitoramento do estado do robô;
-* visualização da bateria;
-* indicação de localização;
-* estado do sistema UV;
-* estado de conexão;
-* ativação do robô;
-* parada segura;
-* gerenciamento e visualização de missões;
-* navegação entre diferentes áreas do sistema.
-
----
-
-## 🎥 Demonstração
-
-<div align="center">
-
-![Demonstração UV-Care Robot](docs/demo/uv-care-demo.gif)
-
-</div>
-
-> Caso o GIF ainda não tenha sido adicionado, coloque o arquivo em `docs/demo/uv-care-demo.gif`.
+* 🔐 Autenticação de usuários
+* 🤖 Monitoramento do estado do robô
+* 🔋 Visualização do nível de bateria
+* 📍 Indicação de localização
+* ☀️ Estado do sistema UV
+* 📡 Estado da conexão
+* 🔌 Ativação do robô
+* 🛑 Parada segura
+* 📋 Visualização de missões
+* ⚙️ Configurações
+* ☰ Navegação por menu lateral
 
 ---
 
-## 📱 Interface do aplicativo
+# 📱 Interface do aplicativo
 
-### 🔐 Login
+## 🔐 Login
 
 <div align="center">
 
@@ -81,11 +74,13 @@ Através do aplicativo é possível demonstrar:
 
 </div>
 
-Tela responsável pela autenticação do usuário através do **Firebase Authentication**, incluindo a opção de manter a sessão salva.
+Tela responsável pela autenticação do usuário utilizando **Firebase Authentication**.
+
+A interface também possui a opção **Lembrar login**, permitindo manter a sessão do usuário salva.
 
 ---
 
-### 🤖 Painel principal
+## 🤖 Painel principal
 
 <div align="center">
 
@@ -93,19 +88,21 @@ Tela responsável pela autenticação do usuário através do **Firebase Authent
 
 </div>
 
-O painel concentra as principais informações do sistema e os controles disponíveis durante a demonstração.
+O painel principal concentra as principais informações relacionadas ao funcionamento do sistema.
 
 Entre as informações apresentadas estão:
 
-* status do robô;
-* nível de bateria;
-* localização;
-* estado do sistema UV;
-* estado da conexão.
+* Status do robô
+* Estado da bateria
+* Localização
+* Estado do sistema UV
+* Estado da conexão
+
+A tela também possui os principais controles utilizados durante a demonstração.
 
 ---
 
-### ☰ Menu lateral
+## ☰ Menu lateral
 
 <div align="center">
 
@@ -113,11 +110,11 @@ Entre as informações apresentadas estão:
 
 </div>
 
-O menu lateral permite navegar rapidamente entre as principais áreas do aplicativo.
+O menu lateral permite navegar entre as principais áreas do aplicativo, facilitando o acesso ao painel, missões e configurações.
 
 ---
 
-### 📋 Missões
+## 📋 Missões
 
 <div align="center">
 
@@ -125,11 +122,11 @@ O menu lateral permite navegar rapidamente entre as principais áreas do aplicat
 
 </div>
 
-Tela destinada à visualização e gerenciamento das missões apresentadas durante a demonstração do sistema.
+Tela responsável pela apresentação das missões relacionadas ao funcionamento do sistema durante a demonstração.
 
 ---
 
-### ⚙️ Configurações
+## ⚙️ Configurações
 
 <div align="center">
 
@@ -141,7 +138,7 @@ Tela destinada à visualização e gerenciamento das missões apresentadas duran
 
 ---
 
-## ⚙️ Funcionalidades
+# ⚙️ Funcionalidades
 
 | Funcionalidade                       | Status |
 | ------------------------------------ | :----: |
@@ -152,8 +149,8 @@ Tela destinada à visualização e gerenciamento das missões apresentadas duran
 | 🛑 Parada segura                     |    ✅   |
 | 🔋 Visualização da bateria           |    ✅   |
 | 📍 Visualização da localização       |    ✅   |
-| ☀️ Status do sistema UV              |    ✅   |
-| 📡 Status de conexão                 |    ✅   |
+| ☀️ Estado do sistema UV              |    ✅   |
+| 📡 Estado da conexão                 |    ✅   |
 | 📋 Tela de missões                   |    ✅   |
 | ☰ Menu lateral                       |    ✅   |
 | ⚙️ Configurações                     |    ✅   |
@@ -161,22 +158,20 @@ Tela destinada à visualização e gerenciamento das missões apresentadas duran
 
 ---
 
-## 🧪 Conta para demonstração
+# 🧪 Conta de demonstração
 
-Para facilitar a avaliação do aplicativo, foi criada uma conta exclusivamente para demonstração:
+Para facilitar a avaliação e os testes do aplicativo, foi criada uma conta exclusivamente para demonstração.
 
-```text
-E-mail: teste@gmail.com
-Senha: 123456
-```
+**E-mail:** `teste@gmail.com`
+**Senha:** `123456`
 
-> A conta é utilizada somente para permitir o acesso às telas e funcionalidades demonstrativas do projeto.
+> A conta foi criada exclusivamente para permitir o acesso às funcionalidades demonstrativas do projeto.
 
 ---
 
-## 🚀 Tecnologias utilizadas
+# 🚀 Tecnologias utilizadas
 
-### Linguagem e plataforma
+## 💻 Desenvolvimento
 
 <p>
   <img src="https://skillicons.dev/icons?i=java,androidstudio" />
@@ -185,38 +180,45 @@ Senha: 123456
 
 **Java** · **Android Studio** · **XML**
 
-### Autenticação
+---
+
+## 🔥 Firebase
 
 <p>
   <img src="https://skillicons.dev/icons?i=firebase" />
 </p>
 
-**Firebase Authentication**
-
-### Versionamento e desenvolvimento
-
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
-</p>
-
-**Git** · **GitHub** · **Visual Studio Code**
+O **Firebase Authentication** é utilizado para realizar a autenticação dos usuários no aplicativo.
 
 ---
 
-## 🧩 Estrutura da aplicação
+## 🛠️ Versionamento
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github" />
+</p>
+
+**Git** · **GitHub**
+
+---
+
+# 🧩 Estrutura da aplicação
 
 ```text
 Tela_Login
      │
-     │ Firebase Authentication
+     │
+     ▼
+Firebase Authentication
+     │
      ▼
 MainActivity
      │
      ├──────────────► Painel principal
      │
-     ├──────────────► Controles
-     │
      ├──────────────► Monitoramento
+     │
+     ├──────────────► Controles
      │
      ├──────────────► Tela_Missoes
      │
@@ -226,25 +228,29 @@ MainActivity
                           Logout
 ```
 
-### Principais classes
+---
 
-```text
-Tela_Login.java
-└── Autenticação e gerenciamento inicial da sessão
+## 📦 Principais classes
 
-MainActivity.java
-└── Painel principal, status e controles
+### `Tela_Login.java`
 
-Tela_Missoes.java
-└── Interface relacionada às missões
+Responsável pela autenticação do usuário e gerenciamento inicial da sessão.
 
-Tela_Configuracoes.java
-└── Configurações e logout
-```
+### `MainActivity.java`
+
+Responsável pelo painel principal, informações de estado e controles apresentados ao usuário.
+
+### `Tela_Missoes.java`
+
+Responsável pela interface relacionada às missões.
+
+### `Tela_Configuracoes.java`
+
+Responsável pelas configurações da aplicação e logout.
 
 ---
 
-## 📂 Estrutura do repositório
+# 📂 Estrutura do repositório
 
 ```text
 UV-Care-Robot/
@@ -279,7 +285,6 @@ UV-Care-Robot/
 │   │   └── 05-configuracoes.png
 │   │
 │   └── demo/
-│       └── uv-care-demo.gif
 │
 ├── gradle/
 ├── .gitignore
@@ -294,62 +299,60 @@ UV-Care-Robot/
 
 ---
 
-## ▶️ Executando o projeto
+# ▶️ Executando o projeto
 
-### Pré-requisitos
+## Pré-requisitos
 
-Para abrir o projeto pelo código-fonte:
+Para executar o projeto pelo código-fonte é necessário possuir:
 
-* Android Studio;
-* JDK compatível com o projeto;
-* Android SDK;
-* dispositivo Android ou emulador;
-* configuração do Firebase quando necessária.
+* Android Studio
+* Android SDK
+* JDK compatível com o projeto
+* Emulador Android ou dispositivo físico
+* Configuração adequada do Firebase
 
-### Clone o repositório
+---
+
+## 📥 Clonar o repositório
 
 ```bash
 git clone https://github.com/IgorGabriel505/UV-Care-Robot.git
 ```
 
-Abra a pasta clonada utilizando o **Android Studio**.
+Depois:
 
-Aguarde a sincronização do Gradle e execute o aplicativo em um dispositivo Android ou emulador.
+1. Abra o projeto no **Android Studio**
+2. Aguarde a sincronização do Gradle
+3. Configure o Firebase quando necessário
+4. Selecione um emulador ou dispositivo Android
+5. Execute o aplicativo
 
 ---
 
-## 📥 Testar sem abrir o código
+# 📲 Testar o aplicativo
 
-Para facilitar a demonstração, uma versão compilada do aplicativo pode ser disponibilizada através do **GitHub Releases**.
+Uma versão compilada do aplicativo será disponibilizada através da seção **Releases** deste repositório.
 
 <p>
-  <a href="https://github.com/IgorGabriel505/UV-Care-Robot/releases/latest">
-    <img src="https://img.shields.io/badge/⬇️%20Baixar%20versão%20mais%20recente-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <a href="https://github.com/IgorGabriel505/UV-Care-Robot/releases">
+    <img src="https://img.shields.io/badge/📦%20GitHub%20Releases-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
-Após instalar o APK:
+Após instalar o aplicativo, utilize a conta de demonstração:
 
-```text
-E-mail: teste@gmail.com
-Senha: 123456
-```
+**E-mail:** `teste@gmail.com`
+**Senha:** `123456`
 
 ---
 
-## 🏫 FETIN
+# 📌 Status do projeto
 
-O UV-Care Robot foi desenvolvido com foco em **demonstração durante a FETIN**, permitindo apresentar de maneira prática a experiência de interação entre o usuário e a proposta do sistema robótico.
+<div align="center">
 
-O aplicativo funciona como a camada visual do projeto, reunindo informações, controles e navegação em uma interface Android desenvolvida especificamente para a apresentação.
+<img src="https://img.shields.io/badge/STATUS-PROTÓTIPO%20CONCLUÍDO-2ea44f?style=for-the-badge" />
 
----
-
-## 📌 Status do projeto
-
-<p>
-  <img src="https://img.shields.io/badge/STATUS-PROTÓTIPO%20CONCLUÍDO-2ea44f?style=for-the-badge" />
-</p>
+</div>
 
 O aplicativo atingiu o escopo definido para sua utilização como **protótipo demonstrativo na FETIN**.
 
@@ -357,11 +360,11 @@ O objetivo deste repositório é preservar o código-fonte, documentar a soluç�
 
 ---
 
-## 👨‍💻 Autor
+# 👨‍💻 Autor
 
-### Igor Gabriel
+## Igor Gabriel
 
-Estudante de **Engenharia de Software no INATEL** e Técnico em **Desenvolvimento de Sistemas pelo SENAI**, com foco em desenvolvimento de software e interesse profissional em **Back-end Java**.
+Estudante de **Engenharia de Software no INATEL**, Técnico em **Desenvolvimento de Sistemas pelo SENAI** e bolsista de **Iniciação Científica**, com foco profissional em **desenvolvimento Back-end Java**.
 
 <p>
   <a href="https://github.com/IgorGabriel505">
@@ -375,7 +378,7 @@ Estudante de **Engenharia de Software no INATEL** e Técnico em **Desenvolviment
 
 ---
 
-## 📄 Licença
+# 📄 Licença
 
 Este projeto está disponibilizado sob a **MIT License**.
 
@@ -385,10 +388,10 @@ Consulte o arquivo [`LICENSE`](LICENSE) para mais informações.
 
 <div align="center">
 
-### 🤖 UV-Care Robot
+## 🤖 UV-Care Robot
 
 **Java • Android • Firebase • XML**
 
-Desenvolvido para demonstração na FETIN.
+Protótipo demonstrativo desenvolvido para a **FETIN**.
 
 </div>
