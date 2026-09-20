@@ -235,5 +235,160 @@ Tela_Login.java
 MainActivity.java
 └── Painel principal, status e controles
 
-Tela
+Tela_Missoes.java
+└── Interface relacionada às missões
+
+Tela_Configuracoes.java
+└── Configurações e logout
 ```
+
+---
+
+## 📂 Estrutura do repositório
+
+```text
+UV-Care-Robot/
+│
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/
+│   │       │   └── com/example/uv_carerobot/
+│   │       │       ├── Tela_Login.java
+│   │       │       ├── MainActivity.java
+│   │       │       ├── Tela_Missoes.java
+│   │       │       └── Tela_Configuracoes.java
+│   │       │
+│   │       ├── res/
+│   │       │   ├── drawable/
+│   │       │   ├── layout/
+│   │       │   ├── menu/
+│   │       │   ├── mipmap/
+│   │       │   └── values/
+│   │       │
+│   │       └── AndroidManifest.xml
+│   │
+│   └── build.gradle.kts
+│
+├── docs/
+│   ├── screenshots/
+│   │   ├── 01-login.png
+│   │   ├── 02-dashboard.png
+│   │   ├── 03-menu-lateral.png
+│   │   ├── 04-missoes.png
+│   │   └── 05-configuracoes.png
+│   │
+│   └── demo/
+│       └── uv-care-demo.gif
+│
+├── gradle/
+├── .gitignore
+├── LICENSE
+├── README.md
+├── build.gradle.kts
+├── gradle.properties
+├── settings.gradle.kts
+├── gradlew
+└── gradlew.bat
+```
+
+---
+
+## ▶️ Executando o projeto
+
+### Pré-requisitos
+
+Para abrir o projeto pelo código-fonte:
+
+* Android Studio;
+* JDK compatível com o projeto;
+* Android SDK;
+* dispositivo Android ou emulador;
+* configuração do Firebase quando necessária.
+
+### Clone o repositório
+
+```bash
+git clone https://github.com/IgorGabriel505/UV-Care-Robot.git
+```
+
+Abra a pasta clonada utilizando o **Android Studio**.
+
+Aguarde a sincronização do Gradle e execute o aplicativo em um dispositivo Android ou emulador.
+
+---
+
+## 📥 Testar sem abrir o código
+
+Para facilitar a demonstração, uma versão compilada do aplicativo pode ser disponibilizada através do **GitHub Releases**.
+
+<p>
+  <a href="https://github.com/IgorGabriel505/UV-Care-Robot/releases/latest">
+    <img src="https://img.shields.io/badge/⬇️%20Baixar%20versão%20mais%20recente-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  </a>
+</p>
+
+Após instalar o APK:
+
+```text
+E-mail: teste@gmail.com
+Senha: 123456
+```
+
+---
+
+## 🏫 FETIN
+
+O UV-Care Robot foi desenvolvido com foco em **demonstração durante a FETIN**, permitindo apresentar de maneira prática a experiência de interação entre o usuário e a proposta do sistema robótico.
+
+O aplicativo funciona como a camada visual do projeto, reunindo informações, controles e navegação em uma interface Android desenvolvida especificamente para a apresentação.
+
+---
+
+## 📌 Status do projeto
+
+<p>
+  <img src="https://img.shields.io/badge/STATUS-PROTÓTIPO%20CONCLUÍDO-2ea44f?style=for-the-badge" />
+</p>
+
+O aplicativo atingiu o escopo definido para sua utilização como **protótipo demonstrativo na FETIN**.
+
+O objetivo deste repositório é preservar o código-fonte, documentar a solução desenvolvida e permitir que outras pessoas conheçam e testem a aplicação.
+
+---
+
+## 👨‍💻 Autor
+
+### Igor Gabriel
+
+Estudante de **Engenharia de Software no INATEL** e Técnico em **Desenvolvimento de Sistemas pelo SENAI**, com foco em desenvolvimento de software e interesse profissional em **Back-end Java**.
+
+<p>
+  <a href="https://github.com/IgorGabriel505">
+    <img src="https://img.shields.io/badge/GitHub-IgorGabriel505-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+
+  <a href="https://www.linkedin.com/in/igor-gabriel-porto-vidal/">
+    <img src="https://img.shields.io/badge/LinkedIn-Igor%20Gabriel-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
+
+---
+
+## 📄 Licença
+
+Este projeto está disponibilizado sob a **MIT License**.
+
+Consulte o arquivo [`LICENSE`](LICENSE) para mais informações.
+
+---
+
+<div align="center">
+
+### 🤖 UV-Care Robot
+
+**Java • Android • Firebase • XML**
+
+Desenvolvido para demonstração na FETIN.
+
+</div>
